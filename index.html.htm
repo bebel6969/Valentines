@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Valentine 💖</title>
+  <style>
+    body {
+      background: #ffe6ea;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      font-family: Arial, sans-serif;
+    }
+    .card {
+      background: white;
+      padding: 20px;
+      text-align: center;
+      border-radius: 15px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    }
+    img {
+      width: 200px;
+    }
+    button {
+      padding: 10px 20px;
+      margin: 10px;
+      border: none;
+      border-radius: 10px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    #yes {
+      background: #ff4d6d;
+      color: white;
+    }
+    #no {
+      background: #ccc;
+    }
+  </style>
+</head>
+<body>
+
+<div class="card">
+  <img src="https://media1.tenor.com/m/3d_11ehEYjQAAAAd/dog-heart.gif">
+  <h2>Will you be my Valentine? 💘</h2>
+  <button id="yes" onclick="yes()">Yes</button>
+  <button id="no" onmouseover="moveNo()">No</button>
+</div>
+
+<script>
+  function yes() {
+    alert("YEAAHHHHHH!! 💖🥰");
+  }
+  function moveNo() {
+    const btn = document.getElementById("no");
+    btn.style.position = "absolute";
+    btn.style.top = Math.random() * 80 + "%";
+    btn.style.left = Math.random() * 80 + "%";
+  }
+</script>
+
+</body>
+</html>
